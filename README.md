@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Key Features](#key-features)
@@ -28,7 +28,7 @@
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 Healthcare AI Platform is an enterprise-grade, full-stack healthcare application featuring an intelligent AI-powered avatar assistant. It combines conversational AI, real-time health monitoring, appointment management, and medicine tracking into a seamless user experience.
 
@@ -43,9 +43,9 @@ Healthcare AI Platform is an enterprise-grade, full-stack healthcare application
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🤖 Intelligent Avatar Assistant
+###  Intelligent Avatar Assistant
 - **Animated 3D SVG Face** with natural expressions (happy, concerned, thinking, confused)
 - **Multi-Modal Input**: Voice (speech-to-text) and text messaging
 - **Contextual Responses**: GPT-4 powered with medical domain awareness
@@ -53,40 +53,40 @@ Healthcare AI Platform is an enterprise-grade, full-stack healthcare application
 - **Draggable Interface**: Collapsible floating panel with smooth animations
 - **Multilingual Voice**: Supports English, Hindi, and Malayalam
 
-### 💬 Advanced Chat System
+###  Advanced Chat System
 - **Context Preservation**: Maintains conversation history for personalized responses
 - **Symptom Analysis**: Medical knowledge base integration for health assessment
 - **Real-Time WebSocket**: Instant message delivery and avatar response streaming
 - **Message Persistence**: All conversations stored for audit and continuity of care
 
-### 💊 Medicine Management
+###  Medicine Management
 - **Smart Reminders**: Customizable schedules with multi-channel notifications
 - **Adherence Tracking**: Real-time compliance metrics and trends
 - **Refill Alerts**: Automatic notifications when medicines running low
 - **Drug Interaction Checker**: Prevent harmful medication combinations
 - **Medication History**: Complete pharmaceutical timeline per patient
 
-### 📊 Health Metrics Dashboard
+###  Health Metrics Dashboard
 - **Vital Signs Tracking**: Blood pressure, heart rate, temperature, SpO2
 - **Weight Management**: BMI tracking and trend analysis
 - **Blood Sugar Monitoring**: Glucose level trends for diabetes management
 - **Sleep Analysis**: Sleep quality and duration tracking
 - **Activity Logs**: Exercise and physical activity records
 
-### 📅 Appointment System
+###  Appointment System
 - **One-Click Booking**: Simple appointment scheduling interface
 - **Smart Notifications**: 24-hour and 1-hour reminders
 - **Doctor Profiles**: Specialty and qualification information
 - **Calendar Integration**: Visual scheduling with conflict prevention
 - **Rescheduling**: Flexible appointment modifications
 
-### 🔔 Notification Engine
+###  Notification Engine
 - **Multi-Channel Delivery**: In-app, push, email, and SMS support
 - **Intelligent Scheduling**: Respects quiet hours and user preferences
 - **Priority Levels**: Critical, high, normal notification routing
 - **Delivery Tracking**: Confirmation and read receipts
 
-### 🌍 Multilingual & Accessibility
+###  Multilingual & Accessibility
 - **3 Languages**: English, Hindi, Malayalam with regional variants
 - **Right-to-Left Support**: Arabic and RTL language ready
 - **Voice Features**: Natural speech synthesis and recognition
@@ -94,7 +94,7 @@ Healthcare AI Platform is an enterprise-grade, full-stack healthcare application
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### **Frontend**
 | Technology | Version | Purpose |
@@ -137,7 +137,7 @@ Healthcare AI Platform is an enterprise-grade, full-stack healthcare application
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 ### System Requirements
 - **Node.js**: v18.0 or higher
@@ -161,7 +161,7 @@ Healthcare AI Platform is an enterprise-grade, full-stack healthcare application
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone & Setup
 
@@ -681,7 +681,7 @@ npm test -- --coverage     # With coverage
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### Vercel Deployment (Frontend)
 
@@ -725,11 +725,11 @@ docker-compose logs -f
 
 ---
 
-## 🔐 Security
+##  Security
 
 ### Important Security Practices
 
-✅ **DO:**
+ **DO:**
 - Use HTTPS in production
 - Store API keys in environment variables
 - Validate all user inputs on backend
@@ -740,7 +740,7 @@ docker-compose logs -f
 - Log security events
 - Keep dependencies updated
 
-❌ **DON'T:**
+ **DON'T:**
 - Commit `.env` files with credentials
 - Log sensitive data
 - Use weak passwords
@@ -754,7 +754,7 @@ docker-compose logs -f
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
@@ -771,7 +771,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for d
 
 ---
 
-## 🆘 Troubleshooting
+##  Troubleshooting
 
 ### Avatar Not Displaying
 ```
@@ -813,7 +813,7 @@ Solution:
 
 ---
 
-## ❓ FAQ
+##  FAQ
 
 **Q: Can I use this in production?**
 A: Yes, it's production-ready with proper security configuration.
@@ -834,7 +834,7 @@ A: Yes, responsive design supports all devices.
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License - see [LICENSE](./LICENSE) file for details.
 
@@ -850,9 +850,9 @@ in the Software without restriction...
 
 ---
 
-## ⚖️ Legal & Medical Disclaimer
+##  Legal & Medical Disclaimer
 
-### ⚠️ Important Notice
+###  Important Notice
 
 **THIS IS NOT A MEDICAL DEVICE**
 
@@ -865,7 +865,7 @@ This application is designed as an educational tool and health management assist
 
 ---
 
-## 🎯 Roadmap
+##  Roadmap
 
 ### v1.1 (Q1 2024)
 - [ ] Advanced 3D avatar using Three.js
@@ -887,7 +887,7 @@ This application is designed as an educational tool and health management assist
 
 ---
 
-## 📞 Support & Contact
+##  Support & Contact
 
 - **Issues**: [GitHub Issues](https://github.com/anjalidineshh/healthcare-ai/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/anjalidineshh/healthcare-ai/discussions)
@@ -896,7 +896,7 @@ This application is designed as an educational tool and health management assist
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 ### Technologies & Services
 - OpenAI for GPT-4 API
@@ -909,7 +909,7 @@ Thank you to all contributors who have helped improve this project!
 
 ---
 
-## 📈 Statistics
+##  Statistics
 
 ![GitHub stars](https://img.shields.io/github/stars/anjalidineshh/healthcare-ai?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/anjalidineshh/healthcare-ai?style=social)
@@ -919,7 +919,7 @@ Thank you to all contributors who have helped improve this project!
 
 **Last Updated**: January 2024  
 **Current Version**: 1.0.0  
-**Stability**: Production Ready ✅
+**Stability**: Production Ready 
 
 ---
 
