@@ -8,15 +8,15 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Menu, X, LogOut } from 'lucide-react';
 import FloatingAvatar from './FloatingAvatar/FloatingAvatar';
+import { clearAuthSession } from '../utils/api';
 
 const Layout = ({ children }) => {
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    router.push('/');
+    clearAuthSession();
+    router.push('/login');
   };
 
   const navItems = [

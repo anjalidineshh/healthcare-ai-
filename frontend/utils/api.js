@@ -1,50 +1,33 @@
 import axios from 'axios';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-const DEMO_EMAIL = 'demo@healthai.local';
-const DEMO_PASSWORD = 'Demo@123456';
 
-export const ensureSession = async () => {
+export const getStoredToken = () => {
   if (typeof window === 'undefined') return null;
+  return localStorage.getItem('token');
+};
 
-  let token = localStorage.getItem('token');
-  if (token) return token;
+export const setAuthSession = (token, user) => {
+  if (typeof window === 'undefined') return;
+  if (token) localStorage.setItem('token', token);
+  if (user) localStorage.setItem('user', JSON.stringify(user));
+};
 
-  try {
-    const loginRes = await axios.post(`${API_BASE_URL}/api/auth/login`, {
-      email: DEMO_EMAIL,
-      password: DEMO_PASSWORD,
-    });
-
-    token = loginRes.data?.token;
-  } catch (loginError) {
-    await axios.post(`${API_BASE_URL}/api/auth/register`, {
-      email: DEMO_EMAIL,
-      password: DEMO_PASSWORD,
-      firstName: 'Demo',
-      lastName: 'User',
-    });
-
-    const loginRes = await axios.post(`${API_BASE_URL}/api/auth/login`, {
-      email: DEMO_EMAIL,
-      password: DEMO_PASSWORD,
-    });
-
-    token = loginRes.data?.token;
-  }
-
-  if (token) {
-    localStorage.setItem('token', token);
-  }
-
-  return token;
+export const clearAuthSession = () => {
+  if (typeof window === 'undefined') return;
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
 };
 
 export const getApiClient = async () => {
-  const token = await ensureSession();
+  const token = getStoredToken();
+
+  if (!token) {
+    throw new Error('AUTH_REQUIRED');
+  }
 
   return axios.create({
     baseURL: `${API_BASE_URL}/api`,
-    headers: token ? { Authorization: `Bearer ${token}` } : {},
+    headers: { Authorization: `Bearer ${token}` },
   });
 };
